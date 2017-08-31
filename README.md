@@ -1,2 +1,2 @@
-# justforfun
-just random canvas
+# sandbox
+just some tutorial playground
