@@ -9,19 +9,25 @@ function Square(props){
     </button>
   );
 }
+//onClick={props.onClick()} would not work because it would call props.onClick immediately instead of passing it down.
+
 
 class Board extends React.Component {
   constructor() {
     super();
     this.state = {
       squares: Array(9).fill(null), //set initial state to contain an array with 9 nulls, corresponding to the 9 squares
+      xIsNext: true,
     };
   }
 
   handleClick(i) {
-    const squares = this.state.squares.slice();
-    squares[i] = 'X';
-    this.setState({squares: squares});
+    const squares = this.state.squares.slice(); //copy the squares array instead of mutating the existing array
+    squares[i] = this.state.xIsNext ? 'X' : 'O';
+    this.setState({
+      squares: squares,
+      xIsNext: !this.state.xIsNext
+    });
   }
 
   renderSquare(i) {
