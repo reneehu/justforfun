@@ -7,7 +7,13 @@
     "bower": "^1.7.10"
   },
   "devDependencies": {
-    "bower": "^1.7.10"
+    "bower": "^1.7.9",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-browser": "^2.1.4",
+    "gulp-livereload": "^3.8.1",
+    "gulp-size": "^2.1.0",
+    "reactify": "^1.1.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
