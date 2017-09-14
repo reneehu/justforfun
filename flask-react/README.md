@@ -1,6 +1,6 @@
 # sandbox
-activate environment `. venv/bin/activate`
+activate virtualenv environment `. venv/bin/activate`
 
 deactivate environment `deactivate`
 
-
+run the app `sh run.sh`
